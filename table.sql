@@ -23,3 +23,6 @@ INSERT INTO users (name, email, age) VALUES (
 
 /*SELECT all rows where the age is 20*/
 SELECT * FROM users WHERE age = 20;
+
+/*Deleting row from table*/
+DELETE FROM users WHERE email = "jax@gmail.com";
