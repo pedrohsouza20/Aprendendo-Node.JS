@@ -26,3 +26,6 @@ SELECT * FROM users WHERE age = 20;
 
 /*Deleting row from table*/
 DELETE FROM users WHERE email = "jax@gmail.com";
+
+/*Updating tables'column data*/
+UPDATE users SET name = "Novo Nome" WHERE email = "spencer@gmail.com";
