@@ -1,5 +1,25 @@
+/*Start MYSQL server connection*/
+MYSQL -h localhost -u root -p;
+
+/*Show all databases*/
+SHOW DATABASES;
+
+/*Select some database*/
+USE databasename;
+
+/*Create a table*/
 CREATE TABLE users(name VARCHAR(64), email VARCHAR(128), age INT);
-INSERT INTO
-    users (name, email, age)
-VALUES
-    ("Pedro Souza", "contato.pedromoc@gmail.com", 20);
+
+/*Showing all tables*/
+SHOW TABLES;
+
+/*Show table description*/
+DESCRIBE tablename;
+
+/*Inserting data on a table*/
+INSERT INTO users (name, email, age) VALUES (
+    "Jax", "jax@gmail.com", 20
+);
+
+/*SELECT all rows where the age is 20*/
+SELECT * FROM users WHERE age = 20;
